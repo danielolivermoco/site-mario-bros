@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Super Mario Bros</title>
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -24,11 +25,22 @@
         <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
             ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
             vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
-        <button>Fale Conosco</button>
-        
+        <button id="envform">Fale Conosco</button>
+
     </div>
 
-        <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-e-luigi">
+    <img src="mario.png" alt="logo mario e luigi" class="imagem-mario-e-luigi">
+
+    <form class="fale-conosco" action="https://formsubmit.co/danielmoco10@gmail.com" method="POST">
+
+        <input placeholder="Seu Nome" name="Nome">
+        <input placeholder="Seu telefone" name="Telefone">
+        <textarea placeholder="Digite seu problema aqui" name="Info"></textarea>
+        <button id="sumform">Enviar formulário</button>
+
+    </form>
+
+    <div class="mascara-form"></div>
 
 </body>
 
