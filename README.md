@@ -1,7 +1,7 @@
 <h1> Projeto Site Mario Bros e Luigi</h1>
 <br>
 <br>
-<h2>O projeto desenvolvido no Devclub é um site dedicado aos icônicos personagens Mario Bros e Luigi, criado para celebrar a popular franquia de videogames da Nintendo.  <br><br>
+<h2>Um projeto emocionante de um site estrelado pelos icônicos Mario e Luigi! Seja você um fã ou apenas alguém com problemas de encanamento, nosso site é a solução perfeita. Com HTML, CSS e JavaScript, mergulhamos no mundo dos encanadores mais famosos do Reino dos Cogumelos, oferecendo uma experiência interativa e envolvente. Não importa se é um vazamento inesperado ou uma torneira pingando, Mario e Luigi estão aqui para salvar o dia!   <br><br>
 Tecnologias Utilizadas: <br><br>
 
 HTML5: Utilizado para estruturar o conteúdo do site, incluindo a criação de páginas, seções e elementos interativos. <br><br>
