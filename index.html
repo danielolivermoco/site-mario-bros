@@ -6,42 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Super Mario Bros</title>
-    <script src="scripts.js" defer></script>
 </head>
 
 <body>
 
-    <div class="caixa-video-mario">
+    <header class="header">
+        <img src="./img/icon.png" alt="icon-logo">
+        <a href="#">Home</a>
+        <a href="#">Nossos Serviços</a>
+        <a href="#" onclick="mostrarForm()">Entre em Contato</a>
+    </header>
 
-        <video src="./video/video.mp4" autoplay muted loop></video>
-        <div class="mascara-video"></div>
+    <main class="container">
 
-    </div>
+        <div class="caixa-video-mario">
 
-    <div class="caixa-principal">
+            <video src="./video/video.mp4" autoplay muted loop class="video-mario"></video>
+            <div class="mascara-video"></div>
 
-        <img src="./img/logo.png" alt="logo do super mario" class="logo-mario">
-        <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
-        <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos
-            ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a
-            vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
-        <button id="envform">Fale Conosco</button>
+        </div>
 
-    </div>
+        <div class="sobre-nos">
 
-    <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-e-luigi">
+            <img src="./img/logo.png" alt="logo do super mario" class="logo-mario">
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos
+                ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a
+                vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+            <button onclick="mostrarForm()" id="envform">Fale Conosco</button>
 
-    <form class="fale-conosco" action="https://formsubmit.co/danielmoco10@gmail.com" method="POST">
+        </div>
 
-        <input placeholder="Seu Nome" name="Nome">
-        <input placeholder="Seu telefone" name="Telefone">
-        <textarea placeholder="Digite seu problema aqui" name="Info"></textarea>
-        <button id="sumform">Enviar formulário</button>
 
-    </form>
+        <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-e-luigi">
+        <a href="https://wa.me/5511987653212?text=Quero+ajuda+dos+irm%C3%A3os+Mario" target="_blank"
+            class="link-whatsapp">
+            <img src="./img/whatsapp.png" alt="link-whatsapp">
+        </a>
 
-    <div class="mascara-form"></div>
+        <form class="fale-conosco" action="https://formcarry.com/s/r0xMh-i22N3" method="POST"
+            enctype="multipart/form-data">
+
+            <input placeholder="Seu Nome" type="text" name="Nome">
+            <input placeholder="Seu telefone" type="tel" name="Telefone">
+            <textarea placeholder="Digite seu problema aqui..." name="Dúvida"></textarea>
+            <button type="submit">Enviar formulário</button>
+
+        </form>
+
+        <div onclick="sumirForm()" class="mascara-form"></div>
+
+    </main>
 
 </body>
+
+<script src="scripts.js"></script>
 
 </html>

@@ -1,15 +1,14 @@
 const formulario = document.querySelector(".fale-conosco")
 const mascara = document.querySelector(".mascara-form")
 
-envform.addEventListener("click", enviarFormulario)
-sumform.addEventListener("click", sumirFormulario)
-
-function enviarFormulario() {
-    formulario.style.left = "700px"
+function mostrarForm() {
+    formulario.style.left = "50%"
+    formulario.style.transform = "translateX(-50%)"
     mascara.style.visibility = "visible"
 }
 
-function sumirFormulario() {
-    formulario.style = "-320px"
+function sumirForm() {
+    formulario.style.left = "-330px"
+    formulario.style.transform = "translateX(0)"
     mascara.style.visibility = "hidden"
 }
